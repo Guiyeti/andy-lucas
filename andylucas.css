@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(103, 117, 128);
+    background-image: url(Andyylucas.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-blend-mode:multiply;
+}
+
+
+h1{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+p{
+    color: #fff;
+    font-family: cursive;
+    font-size: small;
+    
+}
+#letra{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.75);
+    transition:all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+  
+}
+#btn-modal:checked ~ .modal{
+    opacity:1;
+    visibility: visible;
+}
+.contenedor{
+    width:400px;
+    height:300px;
+    margin:auto;
+    background: #fff;
+    box-shadow:1px 7px 25px rgba(0,0,0,0.6);
+    transition:all 500ms ease;
+    position:relative;
+    transform: translateY(-30%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn-modal:checked ~ .modal .contenedor{
+    transform: translate(0%);
+    
+}
+.contenedor header{
+    padding:10px;
+    background: #dbd708;
+    color:#fff;
+}
+.contenedor label{
+    position:absolute;
+    top: 10px;
+    right: 100px;
+    color: #e70505;
+    font-size: 15px;
+    cursor:pointer;
+}
+#btn-modal{
+  display: none;
+}
+.lbl-modal{
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
